@@ -1,5 +1,6 @@
 body{
     max-width: 90%;
+    max-height:100%;
     margin:auto;
     background-color: #e6eff6;
     padding-top:2%;
@@ -8,13 +9,13 @@ body{
 .container{
     display:grid;
     grid-template-columns: repeat(4,23%);
+    grid-template-rows: repeat(2,40%);
     gap:3%;
-    height: 100vh;
+    justify-content: center;
+    align-content: center;
 }  
 .box{
     display:grid;
-    justify-content: center;
-    align-items: center;
     place-items: center;
     text-align: center;
     background-color:white;
@@ -26,7 +27,7 @@ h2{
 }
 img{
     margin-top:5%;
-    width:35%;
+    width:70px;
     margin-left:auto;
     margin-right:auto;
 }
@@ -37,13 +38,16 @@ p{
 }
 button{
     all:unset;
+    border-top:1px solid gray;
     width:100px;
-    padding:5%;
+    padding:30px 5% 5% 5%;
     margin-bottom:5%;
 }
 button:hover{
     background-color:#4aaaf4;
+    border:none;
     border-radius:50px;
     color:white;
+    padding:5%;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 1);
 }
